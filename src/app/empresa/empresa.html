@@ -1,0 +1,35 @@
+<section class="empresa-cadastro">
+  <h2>Cadastro da empresa</h2>
+
+  <form class="empresa-form">
+    <div class="campo">
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" [(ngModel)]="empresa.nome" name="nome" placeholder="Digite o nome da empresa" />
+    </div>
+
+    <div class="campo">
+      <label for="cnpj">CNPJ</label>
+      <input id="cnpj" type="text" [(ngModel)]="empresa.cnpj" name="cnpj" placeholder="Digite o CNPJ" />
+    </div>
+
+    <div class="campo">
+      <label for="logomarca">Logomarca</label>
+      <input id="logomarca" type="text" [(ngModel)]="empresa.logomarca" name="logomarca" placeholder="Informe a URL ou nome da logomarca" />
+    </div>
+
+    <div class="campo">
+      <label for="fundacao">Fundação</label>
+      <input id="fundacao" type="date" [(ngModel)]="empresa.fundacao" name="fundacao" />
+    </div>
+
+    <div class="campo campo-texto">
+      <label for="descricao">Descrição</label>
+      <textarea id="descricao" rows="5" [(ngModel)]="empresa.descricao" name="descricao" placeholder="Descreva a empresa"></textarea>
+    </div>
+
+    <div class="acoes">
+      <button type="reset" class="btn btn-secondary" action="reset">Limpar</button>
+      <button type="submit" class="btn btn-primary" action="submit">Enviar</button>
+    </div>
+  </form>
+</section>
